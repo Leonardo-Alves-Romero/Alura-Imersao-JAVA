@@ -3,7 +3,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
-import java.security.Key;
 import java.util.List;
 import java.util.Map;
 
@@ -26,6 +25,9 @@ public class App {
         // Exibir e manipular os dados
         for (Map<String,String> filme : ListaDeFilmes) {
             System.out.println(filme.get("title"));
+            System.out.println(filme.get("image"));
+            System.out.println(filme.get("imDbRating"));
+            System.out.println();
         }
 
     }
